@@ -1,0 +1,129 @@
+/*
+ * Design tokens distilled from the Hello Rache capture — values verified
+ * against the site's live CSS (Bricks + AutomaticCSS variables).
+ */
+:root {
+  --primary: #5B4BFF;
+  --primary-hover: #4C3DF0;
+  --primary-mid: #6C63FF;
+  --primary-magenta: #7B7CFF;
+  --primary-semi: #A5B4FC;
+  --primary-light: #E0E7FF;
+  --primary-ultra-light: #F5F7FF;
+  --primary-dark: #3730A3;
+
+  --heading-color: #1F2937;
+  --body-color: #475569;
+  --muted-color: #64748B;
+
+  --surface: #F8FAFC;
+  --surface-2: #FFFFFF;
+  --line: #E2E8F0;
+  --gold: #F4B740;
+
+  --radius: 5px;
+  --radius-card: 15px;
+  --radius-pill: 100px;
+
+  --content-width: 85.375rem;
+
+  --transition-s: 0.2s;
+  --transition-m: 0.35s;
+  --transition-l: 0.5s;
+  --transition-timing: ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--body-color);
+  background: #ffffff;
+  font-family: 'Poppins', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--heading-color);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h4, h5, h6 {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------------ *
+ * Reveal-on-scroll (directive adds `.reveal`, observer adds `.is-visible`)
+ * Directional variants mirror the site's animate.css usage
+ * (fadeInUp, SlideInVerticalTop, SlideInHorizontalRight, fadeInRight/Left).
+ * ------------------------------------------------------------------ */
+.reveal {
+  opacity: 0;
+}
+.reveal.is-visible {
+  opacity: 1; /* explicit so content shows even if a keyframe is stripped */
+  animation: fadeUp 0.7s ease-out both;
+}
+.reveal--down.is-visible { animation: fadeDown 0.7s ease-out both; }
+.reveal--right.is-visible { animation: fadeRight 0.75s ease-out both; }
+.reveal--left.is-visible { animation: fadeLeft 0.75s ease-out both; }
+.reveal--in.is-visible { animation: fadeInOnly 0.8s ease-out both; }
+
+/* Keyframes defined here so they are ALWAYS emitted (Tailwind only outputs
+   @keyframes whose animate-* utility appears in markup). */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeRight {
+  0% { opacity: 0; transform: translateX(40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeLeft {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInOnly {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+@keyframes badgeBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+/* Hero fade slider cross-fade */
+@keyframes heroFade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* Community image slider (continuous marquee) */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+/* VA-types accordion left-border progress timer */
+@keyframes vaProgress {
+  0% { height: 0; }
+  100% { height: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
