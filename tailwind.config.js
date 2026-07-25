@@ -9,28 +9,58 @@ module.exports = {
   content: ['./src/**/*.{html,ts}'],
   theme: {
     extend: {
-      colors: {
-        // Brand purple scale — exact ACSS --base-* values from the source site.
-        primary: {
-          DEFAULT: '#8B1E8E',        // --base / --primary
-          hover: '#a023a4',          // --base-hover
-          mid: '#9c27b0',            // gradient mid stop
-          magenta: '#d466d4',        // --base gradient bright end
-          semi: '#dc6ce0',           // --base-semi-light
-          light: '#f0c0f2',          // --base-light
-          'ultra-light': '#faeafb',  // --base-ultra-light
-          dark: '#661669',           // --base-dark
-        },
-        tertiary: '#E8D3E9',         // --tertiary (soft lavender)
-        heading: '#424242',          // --secondary (headings/body ink)
-        ink: '#000000',              // --neutral
-        muted: '#5e5e5e',
-        surface: '#F7F9FB',          // --accent (light blue-grey sections)
-        surface2: '#fcfcfc',         // near-white section tint (most common)
-        navy: '#2b4055',             // --accent-dark
-        gold: '#fac83b',             // rating stars (from :hover color rule)
-        line: '#dddedf',             // borders
+    colors: {
+      primary: {
+        DEFAULT: '#0E3A5D',
+        hover: '#123D63',
+        mid: '#2F5D7C',
+        dark: '#081F33',
+
+        light: '#EAF4F8',
+        'ultra-light': '#F8FBFD',
+
+        magenta: '#5DAA4F',
+        semi: '#84C95E',
       },
+
+  secondary: '#5DAA4F',
+  success: '#84C95E',
+
+  heading: '#102A43',
+  ink: '#1F2937',
+  muted: '#64748B',
+
+  surface: '#F8FAFC',
+  surface2: '#FFFFFF',
+
+  navy: '#0E3A5D',
+  silver: '#D8DDE3',
+
+  gold: '#F4B740',
+  line: '#E5E7EB',
+},
+      // colors: {
+      //   // Brand purple scale — exact ACSS --base-* values from the source site.
+      //   primary: {
+      //     DEFAULT: '#8B1E8E',        // --base / --primary
+      //     hover: '#a023a4',          // --base-hover
+      //     mid: '#9c27b0',            // gradient mid stop
+      //     magenta: '#d466d4',        // --base gradient bright end
+      //     semi: '#dc6ce0',           // --base-semi-light
+      //     light: '#f0c0f2',          // --base-light
+      //     'ultra-light': '#faeafb',  // --base-ultra-light
+      //     dark: '#661669',           // --base-dark
+      //   },
+      //   tertiary: '#E8D3E9',         // --tertiary (soft lavender)
+      //   heading: '#424242',          // --secondary (headings/body ink)
+      //   ink: '#000000',              // --neutral
+      //   muted: '#5e5e5e',
+      //   surface: '#F7F9FB',          // --accent (light blue-grey sections)
+      //   surface2: '#fcfcfc',         // near-white section tint (most common)
+      //   navy: '#2b4055',             // --accent-dark
+      //   gold: '#fac83b',             // rating stars (from :hover color rule)
+      //   line: '#dddedf',             // borders
+      // },
       fontFamily: {
         heading: ['Montserrat', 'Arial', 'sans-serif'],
         sans: ['Poppins', 'Arial', 'sans-serif'],
@@ -56,19 +86,32 @@ module.exports = {
         m: '350ms',
         l: '500ms',
       },
-      backgroundImage: {
-        // Bright magenta card/banner gradient — sampled from the live site
-        // (service cards #942696 -> #cf61ce, testimonials, final CTA).
-        'purple-gradient':
-          'linear-gradient(160deg, #942696 0%, #b845b9 55%, #cf61ce 100%)',
-        // Darker solid-ish radial used only on the thin credibility / CTA strips.
-        'purple-radial':
-          'repeating-radial-gradient(closest-corner at center, #8b1e8e, #9c27b0)',
-        // Hover state used on the purple cards/buttons.
-        'purple-hover': 'repeating-radial-gradient(at center, #d466d4, #8b1e8e)',
-        'img-overlay':
-          'linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.25) 70%, transparent)',
-      },
+backgroundImage: {
+  'purple-gradient':
+    'linear-gradient(135deg, #0D2E4F 0%, #2F5D7C 60%, #5DAA4F 100%)',
+
+  'purple-radial':
+    'radial-gradient(circle at center, #0D2E4F 0%, #081F33 100%)',
+
+  'purple-hover':
+    'linear-gradient(135deg, #1E5578 0%, #5DAA4F 100%)',
+
+  'img-overlay':
+    'linear-gradient(0deg, rgba(0,0,0,.45), rgba(0,0,0,.15), transparent)',
+},
+      // backgroundImage: {
+      //   // Bright magenta card/banner gradient — sampled from the live site
+      //   // (service cards #942696 -> #cf61ce, testimonials, final CTA).
+      //   'purple-gradient':
+      //     'linear-gradient(160deg, #942696 0%, #b845b9 55%, #cf61ce 100%)',
+      //   // Darker solid-ish radial used only on the thin credibility / CTA strips.
+      //   'purple-radial':
+      //     'repeating-radial-gradient(closest-corner at center, #8b1e8e, #9c27b0)',
+      //   // Hover state used on the purple cards/buttons.
+      //   'purple-hover': 'repeating-radial-gradient(at center, #d466d4, #8b1e8e)',
+      //   'img-overlay':
+      //     'linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.25) 70%, transparent)',
+      // },
       keyframes: {
         floatY: {
           '0%, 100%': { transform: 'translateY(0)' },

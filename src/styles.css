@@ -58,11 +58,19 @@
   .grad-hover {
     @apply transition-all duration-l ease-in-out;
   }
-  .grad-hover:hover {
+  /* .grad-hover:hover {
     transform: translateY(-5px);
     background-image: repeating-radial-gradient(at center, #d466d4, #8b1e8e);
-  }
-
+  } */
+.grad-hover:hover {
+  transform: translateY(-5px);
+  background-image: linear-gradient(
+    135deg,
+    #0E3A5D 0%,
+    #2F5D7C 60%,
+    #5DAA4F 100%
+  );
+}
   /* Nav / menu item: subtle tint + rounded + purple text over .3s. */
   .nav-hover {
     @apply rounded-[10px] transition-all duration-300 ease-in-out;

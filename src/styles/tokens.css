@@ -3,16 +3,17 @@
  * against the site's live CSS (Bricks + AutomaticCSS variables).
  */
 :root {
-  --primary: #5B4BFF;
-  --primary-hover: #4C3DF0;
-  --primary-mid: #6C63FF;
-  --primary-magenta: #7B7CFF;
-  --primary-semi: #A5B4FC;
-  --primary-light: #E0E7FF;
-  --primary-ultra-light: #F5F7FF;
-  --primary-dark: #3730A3;
+  /* Brand Colours */
+  --primary: #0E3A5D;
+  --primary-hover: #0A2E4B;
+  --primary-mid: #2D5B7A;
+  --primary-magenta: #4FA36A;
+  --primary-semi: #8DC9A3;
+  --primary-light: #E6F4EC;
+  --primary-ultra-light: #F6FBF8;
+  --primary-dark: #081F33;
 
-  --heading-color: #1F2937;
+  --heading-color: #102A43;
   --body-color: #475569;
   --muted-color: #64748B;
 
