@@ -33,15 +33,17 @@ interface FooterLink {
               and Administrative Support for medical practices.
             </p>
 
-            <div class="mt-6 flex gap-3">
-              <a
-                *ngFor="let s of socials"
-                href="#"
-                class="grid h-10 w-10 place-items-center rounded-full bg-primary-ultra-light text-primary hover:bg-primary hover:text-white transition"
-              >
-                {{ s }}
-              </a>
-            </div>
+        <!-- 
+          <div class="mt-6 flex gap-3">
+            <a
+              *ngFor="let s of socials"
+              href="#"
+              class="grid h-10 w-10 place-items-center rounded-full bg-primary-ultra-light text-primary hover:bg-primary hover:text-white transition"
+            >
+              {{ s }}
+            </a>
+          </div>
+        -->
           </div>
 
           <!-- Services -->
@@ -52,7 +54,7 @@ interface FooterLink {
 
             <ul class="mt-5 space-y-3">
               <li *ngFor="let item of services">
-                <a href="#" class="link-hover">{{ item }}</a>
+                <a href="#">{{ item }}</a>
               </li>
             </ul>
           </div>
@@ -65,7 +67,7 @@ interface FooterLink {
 
             <ul class="mt-5 space-y-3">
               <li *ngFor="let item of solutions">
-                <a href="#" class="link-hover">{{ item }}</a>
+                <a href="#">{{ item }}</a>
               </li>
             </ul>
           </div>

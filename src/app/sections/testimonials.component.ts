@@ -114,12 +114,12 @@ export class TestimonialsComponent implements AfterViewInit, OnDestroy {
   ngOnDestroy(): void { if (this.timer) clearInterval(this.timer); }
 
 readonly videos: VideoTile[] = [
-  { img: '93de34dbac58d009f60963ef0c30b0d4.webp', name: 'Front Office Solutions' },
-  { img: '11c7c0de8951ad0e81ab8d2b24c1ae0f.webp', name: 'Revenue Cycle Management' },
-  { img: '270a52d144c8f798c8711769137aa25b.webp', name: 'Medical Scribing' },
-  { img: 'c4804a676c7e86c8912240aa885b4936.webp', name: 'Insurance Verification' },
-  { img: '56e7554811d29abcd2f3de484fc72d28.webp', name: 'Patient Engagement' },
-  { img: '270a52d144c8f798c8711769137aa25b.webp', name: 'Administrative Support' },
+  { img: '1.png', name: 'Front Office Solutions' },
+  { img: '2.png', name: 'Revenue Cycle Management' },
+  { img: '3.png', name: 'Medical Scribing' },
+  { img: '4.png', name: 'Insurance Verification' },
+  { img: '5.png', name: 'Patient Engagement' },
+  { img: '6.png', name: 'Administrative Support' },
 ];
 
 // readonly quotes: Quote[] = [
