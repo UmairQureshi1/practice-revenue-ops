@@ -65,23 +65,23 @@ readonly categories: Category[] = [
     platforms:[
         {
             name: 'LabDAQ',
-            logo: undefined
+            logo: '/assets/img/logos/labdaq.png'
         },
         {
             name: 'Labgen',
-            logo: undefined
+            logo: '/assets/img/logos/labgen.png'
         },
         {
             name: 'Comtron',
-            logo: undefined
+            logo: '/assets/img/logos/comtron.png'
         },
         {
             name: 'ShadowBox',
-            logo: undefined
+            logo: '/assets/img/logos/shadowbox.png'
         },
         {
             name: 'LabNexus',
-            logo: undefined
+            logo: '/assets/img/logos/labnexus.png'
         }
     ]
 },
@@ -93,19 +93,19 @@ readonly categories: Category[] = [
     platforms:[
         {
             name: 'Premier',
-            logo: undefined
+            logo: '/assets/img/logos/Premier.png'
         },
         {
             name: 'Meditech',
-            logo: undefined
+            logo: '/assets/img/logos/meditech.svg'
         },
         {
             name: 'MedLive',
-            logo: undefined
+            logo: '/assets/img/logos/medlive.png'
         },
         {
             name: 'HPG',
-            logo: undefined
+            logo: '/assets/img/logos/hpg.png'
         }
     ]
 }

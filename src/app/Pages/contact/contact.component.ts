@@ -218,7 +218,7 @@ CONTACT CARDS
 WAYS TO REACH US
 ========================================== -->
 
-<section class="bg-surface py-15">
+<section class="bg-surface py-20">
 
   <div class="container-hr">
 

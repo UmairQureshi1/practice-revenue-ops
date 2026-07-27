@@ -23,7 +23,8 @@ interface FooterLink {
             <img
               src="/assets/img/Practice-Revenue-Ops-Logo-Horizontal.png"
               alt="Practice Revenue Ops"
-              class="h-16-logo w-auto"
+              class="h-20-logo w-auto"
+              style="padding: 0 20px 0 0"
             />
 
             <p class="mt-5 max-w-sm text-sm leading-7">
